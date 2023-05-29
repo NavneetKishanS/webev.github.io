@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+
+body {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .header img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #000000;
+    margin-right: 30px;
+    border-radius: 15%;
+  }
+
+  .header h1 {
+    position: relative; 
+    top: 0px; 
+    left: 0px;
+    bottom: 10px;
+    font-family: 'Times New Roman', sans-serif;
+    text-shadow: 4px 4px 4px #2d5899;
+    color: #000;
+    font-size: 5vw;
+    padding-left: 0;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+
+  .topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    font-family: 'Spacia', sans-serif;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 12%;
+    margin-right: 10px;
+    transition: font-size 0.2s;
+  }
+  
+  .topnav a:hover {
+    background-color: #e76161;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .topnav a.active {
+    background-color: #7289da;
+    color: white;
+  }
+    
+  hr{
+    height: 2px;
+    background-color: #d3dfd8;
+    border: none;
+}
+  
+  .textLine1 {
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  
+  .textLine2 {
+    font-size: 24px;
+    font-style: italic;
+  }
+  
+  .introCard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  hr {
+    border: 1px solid #333;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .textLine1 {
+      font-size: 24px;
+    }
+  
+    .textLine2 {
+      font-size: 18px;
+    }
+  
+    .introCard {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .container {
+      max-width: 900px;
+    }
+  
+    .textLine1 {
+      font-size: 40px;
+    }
+  
+    .textLine2 {
+      font-size: 30px;
+    }
+  
+    .introCard {
+      font-size: 22px;
+    }
+  
+    .column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      font-size: 20px;
+    }
+  
+    .container {
+      max-width: 1000px;
+    }
+  
+    .textLine1 {
+      font-size: 48px;
+    }
+  
+    .textLine2 {
+      font-size: 36px;
+    }
+  
+    .introCard {
+      font-size: 24px;
+    }
+  }
+  
+
+  
+  body.contrast {
+    color: #fff;
+    background-color: #000;
+  }
+  
+  body.contrast .container {
+    border: 1px solid #fff;
+  }
+  
+  body.contrast .overlay {
+    color: #000;
+  }
+  
+  body.contrast .introCard {
+    background-color: #000;
+  }
+  
+  body.contrast a {
+    color: #ff0;
+  }
+  
+  body.contrast hr {
+    border-color: #fff;
+  }
+  
+  .rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .column {
+    flex: 1 1 auto;
+    margin: 10px;
+    max-width: calc(33.33% - 20px);
+    text-align: center;
+  }
+  
+  .column a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 3px solid #7289da;
+  }
+  
+  .column img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border-radius: 25px;
+  }
+  
+  .column a:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #7289da;
+    border: 3px solid #7289da;
+  }
+  
+  .column a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .column a:hover::before {
+    opacity: 1;
+  }
+  

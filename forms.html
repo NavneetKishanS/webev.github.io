@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Backpacker's Abode</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/base.css" title="normal">
+        <link rel="alternate stylesheet" type="text/css" href="css/large.css" title="large">
+        <script src="scripts/styleswitcher.js"></script>
+    </head>
+    <body>
+        <nav class="screenreader">
+            <div class="SkipButton">
+            <a href="#formID">Skip to Main Content</a>
+            </div>
+        </nav>
+        <hr>
+        <header>
+            <div class="header">
+                <figure>
+                    <a href="index.html">
+                        <img id="logo" src="images/Image5_icon.png" alt="Logo"></a>                </figure>
+                <h1 class="btn">   the backpacker's abode.</h1>
+            </div>
+            <div class="topnav">
+                <a href=index.html>Home</a>
+                <a href=photography.html>Photography</a>
+                <a href=aboutMe.html>About Me</a>
+                <a class="active" href=forms.html><b>Forms</b></a>
+              </div>
+        </header>
+        <hr>
+        
+        <div class="header2">
+            <h2 class="btn2">Forms.</h2>
+        </div>
+          <hr>
+        
+        <div class="introPara">
+            If you wish to join me on my future adventures, fill out the form on this page! 
+        </div>
+
+        <br>
+        
+        <form id="formID" action="mailto:navneetkishan54@gmail.com" method="post" enctype="text/plain">
+
+            <div class="introText">Name:
+            <input type="text" name="Name" class="input" placeholder="Your name...">
+            </div>
+          
+            <div class="introText">
+                <label for="gender">Gender:</label>
+                <label><input type="radio" value="male">Male</label>
+                <label><input type="radio" value="female">Female</label>
+                <label><input type="radio" id="gender" name="gender" value="RatherNotSay">Rather Not say</label><br>
+                <br>
+              </div>
+
+              <div class="introText">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Tell me about yourself..." rows="5"></textarea><br>
+          
+            <br>
+            <label>Your Interests:</label><br>
+            <label><input type="checkbox" name="interests" value="Nature">Nature Photography</label><br>
+            <label><input type="checkbox" name="interests" value="Product">Product Photography</label><br>
+            <label><input type="checkbox" name="interests" value="Macro">Macro Photography</label><br>
+            <label><input type="checkbox" name="interests" value="Fashion">Fashion Photography</label><br>
+            <label><input type="checkbox" name="interests" value="Architectural">Architectural Photography</label><br>
+            </div>
+
+            <button class="btn3" type="reset"> Reset</button>
+            <button class="btn3" type="submit"> Submit</button>
+
+        </form>
+          
+        
+    </body>
+</html>
